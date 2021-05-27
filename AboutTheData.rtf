@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Bold;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The MNIST database of handwritten digits, available from this page, has a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.\
+\
+The MNIST database was constructed from NIST's Special Database 3 and Special Database 1 which contain binary images of handwritten digits\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 SD-1 contains 58,527 digit images written by 500 different writers. In contrast to SD-3, where blocks of data from each writer appeared in sequence, the data in SD-1 is scrambled. Writer identities for SD-1 is available and we used this information to unscramble the writers. We then split SD-1 in two: characters written by the first 250 writers went into our new training set. The remaining 250 writers were placed in our test set. Thus we had two sets with nearly 30,000 examples each. The new training set was completed with enough examples from SD-3, starting at pattern # 0, to make a full set of 60,000 training patterns. Similarly, the new test set was completed with SD-3 examples starting at pattern # 35,000 to make a full set with 60,000 test patterns. Only a subset of 10,000 test images (5,000 from SD-1 and 5,000 from SD-3) is available on this site. The full 60,000 sample training set is available.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\b\fs28 \cf2 \cb1 TRAINING SET LABEL FILE (train-labels-idx1-ubyte):\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b0\fs24 \cf2 [offset] [type]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [value]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [description]
+\f1 \
+
+\f3 0000\'a0\'a0\'a0\'a0 32 bit integer\'a0 0x00000801(2049) magic number (MSB first)
+\f1 \
+
+\f3 0004\'a0\'a0\'a0\'a0 32 bit integer\'a0 60000\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of items
+\f1 \
+
+\f3 0008\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label
+\f1 \
+
+\f3 0009\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label
+\f1 \
+
+\f3 ........
+\f1 \
+
+\f3 xxxx\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 The labels values are 0 to 9.
+\f1 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\b\fs28 \cf2 TRAINING SET IMAGE FILE (train-images-idx3-ubyte):\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b0\fs24 \cf2 [offset] [type]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [value]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [description]
+\f1 \
+
+\f3 0000\'a0\'a0\'a0\'a0 32 bit integer\'a0 0x00000803(2051) magic number
+\f1 \
+
+\f3 0004\'a0\'a0\'a0\'a0 32 bit integer\'a0 60000\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of images
+\f1 \
+
+\f3 0008\'a0\'a0\'a0\'a0 32 bit integer\'a0 28\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of rows
+\f1 \
+
+\f3 0012\'a0\'a0\'a0\'a0 32 bit integer\'a0 28\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of columns
+\f1 \
+
+\f3 0016\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel
+\f1 \
+
+\f3 0017\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel
+\f1 \
+
+\f3 ........
+\f1 \
+
+\f3 xxxx\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1 \cf2 Pixels are organized row-wise. Pixel values are 0 to 255. 0 means background (white), 255 means foreground (black).\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\b\fs28 \cf2 TEST SET LABEL FILE (t10k-labels-idx1-ubyte):\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b0\fs24 \cf2 [offset] [type]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [value]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [description]
+\f1 \
+
+\f3 0000\'a0\'a0\'a0\'a0 32 bit integer\'a0 0x00000801(2049) magic number (MSB first)
+\f1 \
+
+\f3 0004\'a0\'a0\'a0\'a0 32 bit integer\'a0 10000\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of items
+\f1 \
+
+\f3 0008\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label
+\f1 \
+
+\f3 0009\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label
+\f1 \
+
+\f3 ........
+\f1 \
+
+\f3 xxxx\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 label\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1 \cf2 The labels values are 0 to 9.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\b\fs28 \cf2 TEST SET IMAGE FILE (t10k-images-idx3-ubyte):\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b0\fs24 \cf2 [offset] [type]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [value]\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 [description]
+\f1 \
+
+\f3 0000\'a0\'a0\'a0\'a0 32 bit integer\'a0 0x00000803(2051) magic number
+\f1 \
+
+\f3 0004\'a0\'a0\'a0\'a0 32 bit integer\'a0 10000\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of images
+\f1 \
+
+\f3 0008\'a0\'a0\'a0\'a0 32 bit integer\'a0 28\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of rows
+\f1 \
+
+\f3 0012\'a0\'a0\'a0\'a0 32 bit integer\'a0 28\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of columns
+\f1 \
+
+\f3 0016\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel
+\f1 \
+
+\f3 0017\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel
+\f1 \
+
+\f3 ........
+\f1 \
+
+\f3 xxxx\'a0\'a0\'a0\'a0 unsigned byte\'a0\'a0 ??\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 pixel\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1 \cf2 Pixels are organized row-wise. Pixel values are 0 to 255. 0 means background (white), 255 means foreground (black).\
+}
